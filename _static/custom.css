@@ -1,0 +1,270 @@
+/* PRAM dropdowns */
+
+/* Expand / Collapse controls */
+.pram-dropdown-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  margin: 1rem 0 1.25rem;
+}
+
+#pram-dropdown-hint {
+  color: #595959;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+#expand-collapse-all {
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #376d9a;
+  border-radius: 3px;
+  background-color: #ffffff;
+  color: #376d9a;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+#expand-collapse-all:hover {
+  background-color: #f2f7fa;
+}
+
+#expand-collapse-all:focus-visible {
+  outline: 3px solid #1a5a96;
+  outline-offset: 3px;
+}
+
+/* Dropdown container */
+details.pram-dropdown {
+  margin: 0 0 1rem;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
+}
+
+/* Alternating dropdown colors */
+details.pram-dropdown-teal {
+  --pram-dropdown-color: #62ddd6;
+}
+
+details.pram-dropdown-blue {
+  --pram-dropdown-color: #4fb8ee;
+}
+
+/* Dropdown header */
+details.pram-dropdown > summary.pram-dropdown-title {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 5rem;
+  padding: 0.85rem 1rem;
+  border: 0;
+  border-radius: 0;
+  color: #000000;
+  background-color: var(--pram-dropdown-color);
+  cursor: pointer;
+  transition:
+    filter 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+/* Remove the browser's native disclosure marker */
+details.pram-dropdown > summary.pram-dropdown-title::-webkit-details-marker {
+  display: none;
+}
+
+details.pram-dropdown > summary.pram-dropdown-title::marker {
+  content: "";
+}
+
+/* Hover and keyboard-focus states */
+details.pram-dropdown > summary.pram-dropdown-title:hover {
+  filter: brightness(92%);
+}
+
+details.pram-dropdown > summary.pram-dropdown-title:focus-visible {
+  outline: 3px solid #1a5a96;
+  outline-offset: 3px;
+  filter: brightness(95%);
+}
+
+/* Center the question and subtitle */
+details.pram-dropdown
+  > summary.pram-dropdown-title
+  > .sd-summary-text {
+  flex: 1;
+  padding-left: 2.5rem;
+  text-align: center;
+  line-height: 1.35;
+}
+
+details.pram-dropdown
+  > summary.pram-dropdown-title
+  > .sd-summary-text
+  strong {
+  display: block;
+  margin: 0;
+  color: #000000;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+details.pram-dropdown
+  > summary.pram-dropdown-title
+  > .sd-summary-text
+  em {
+  display: block;
+  margin-top: 0.2rem;
+  color: #000000;
+  font-size: 0.95rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.35;
+}
+
+/* Replace the theme chevron with a plus/minus indicator */
+details.pram-dropdown
+  > summary.pram-dropdown-title
+  > .sd-summary-state-marker {
+  flex: 0 0 auto;
+  width: 1.6rem;
+  margin-left: 1rem;
+  color: #000000;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1;
+  text-align: center;
+  transform: none !important;
+  transition: none !important;
+}
+
+details.pram-dropdown[open]
+  > summary.pram-dropdown-title
+  > .sd-summary-state-marker {
+  transform: none !important;
+}
+
+details.pram-dropdown
+  > summary.pram-dropdown-title
+  > .sd-summary-state-marker
+  svg {
+  display: none;
+}
+
+details.pram-dropdown
+  > summary.pram-dropdown-title
+  > .sd-summary-state-marker::before {
+  content: "+";
+}
+
+details.pram-dropdown[open]
+  > summary.pram-dropdown-title
+  > .sd-summary-state-marker::before {
+  content: "-";
+}
+
+/* Small triangle between the colored header and white panel */
+details.pram-dropdown > summary.pram-dropdown-title::after {
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  z-index: 3;
+  width: 0;
+  height: 0;
+  border-top: 12px solid var(--pram-dropdown-color);
+  border-right: 12px solid transparent;
+  border-left: 12px solid transparent;
+  content: "";
+  pointer-events: none;
+  transform: translateX(-50%);
+}
+
+/* Expanded content panel */
+details.pram-dropdown > .pram-dropdown-body {
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1.25rem;
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  background-color: #ffffff;
+  will-change: height;
+}
+
+details.pram-dropdown > .pram-dropdown-body > :first-child {
+  margin-top: 0;
+}
+
+details.pram-dropdown > .pram-dropdown-body > :last-child {
+  margin-bottom: 0;
+}
+
+details.pram-dropdown .wy-table-responsive {
+  margin-top: 1rem;
+}
+
+/* Honor reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  details.pram-dropdown > .pram-dropdown-body {
+    scroll-behavior: auto;
+  }
+}
+
+/* Narrow screens */
+@media screen and (max-width: 600px) {
+  .pram-dropdown-controls {
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+  details.pram-dropdown > summary.pram-dropdown-title {
+    min-height: 4.5rem;
+    padding: 0.75rem;
+  }
+
+  details.pram-dropdown
+    > summary.pram-dropdown-title
+    > .sd-summary-text {
+    padding-left: 1.75rem;
+  }
+
+  details.pram-dropdown
+    > summary.pram-dropdown-title
+    > .sd-summary-text
+    strong {
+    font-size: 0.95rem;
+  }
+
+  details.pram-dropdown
+    > summary.pram-dropdown-title
+    > .sd-summary-text
+    em {
+    font-size: 0.875rem;
+  }
+
+  details.pram-dropdown > .pram-dropdown-body {
+    padding: 1rem;
+  }
+}
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  border-left: 4px solid #62ddd6;
+  font-style: bold;
+}
