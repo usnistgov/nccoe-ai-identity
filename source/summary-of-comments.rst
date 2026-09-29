@@ -47,8 +47,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    :class-body: pram-dropdown-body
    :chevron: right-down
 
-   .. rubric:: Build Off Existing Foundations
-      :name: build-off-existing-foundations
+   .. raw:: html
+
+      <h2 id="build-off-existing-foundations">Build Off Existing Foundations</h2>
 
    The comments highlighted two broad perspectives on the application of standards to the emerging agentic ecosystem:
 
@@ -75,8 +76,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    extensions, enhancements, and profiles, can provide the foundation for managing agentic identity and authorization. Any critical gaps in existing standards, as
    identified by respondents, or through this work, will be provided as feedback to the standards and agentic AI communities.
 
-   .. rubric:: Agentic Scale
-      :name: agentic-scale
+   .. raw:: html
+
+      <hr />
+      <h2 id="agentic-scale">Agentic Scale</h2>
 
    While respondents did feel an evolutionary approach to standards was necessary, they also acknowledged that the growth and scale of agentic use will be a
    cross-cutting challenge to how those standards are implemented. Commenters noted both the sheer number of agents that might exist, internal or external to an
@@ -91,8 +94,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    independently verifiable tokens or credentials to minimize centralized calls to verification servers where latency can be introduced, and enabling robust
    auditing and traceability.
 
-   .. rubric:: Agentic Deployment Models
-      :name: agentic-deployment-models
+   .. raw:: html
+
+      <hr />
+      <h2 id="agentic-deployment-models">Agentic Deployment Models</h2>
 
    Respondents highlighted that the ability to implement identity and authorization standards and best practices differs based on the agentic deployment model.
    Three different models were mentioned, each with differing levels of agentic ownership and control:
@@ -162,8 +167,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    :chevron: right-down
 
 
-   .. rubric:: Agentic Identity
-      :name: agentic-identity
+   .. raw:: html
+
+      <h2 id="agentic-identity">Agentic Identity</h2>
 
    Commenters noted that agentic identity should be treated as more than a label, describing it as a combination of the agent’s workload or service identity, its
    operating instance, the human or organization that authorized it, and the specific authority it holds at a given moment. Respondents also called out the
@@ -189,8 +195,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    considerations related to the specific use cases executed as part of the project. As with any digital identity challenge, interoperability is essential, but
    there is unlikely to be a single “one-size-fits-all” approach that would satisfy every potential deployment.
 
-   .. rubric:: Persistence and Ephemerality
-     :name: persistence-and-ephemerality
+   .. raw:: html
+
+      <hr />
+      <h2 id="persistence-and-ephemerality">Persistence and Ephemerality</h2>
 
    Identification and authentication of AI agents can be executed at different layers and in completely different ways based on how they interact with enterprise
    systems. The public feedback received by NIST highlighted a critical architectural debate regarding the lifetime and durability of an agent’s identity. Rather
@@ -204,8 +212,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       
       -- Concept Paper Commenter
 
-   .. rubric:: Trust Anchors
-     :name: trust-anchors
+   .. raw:: html
+
+      <h3 id="trust-anchors">Trust Anchors</h3>
 
    There was a broad consensus across submissions that any secure agentic deployment must rely on stable, long-lived "roots of trust" or "trust anchors." These
    persistent anchors should not be tied to an individual, dynamic agent instance, but must instead be cryptographically bound to the foundational layers that
@@ -222,8 +231,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    -  **Structured System Metadata:** Attaching immutable, long-lived metadata—such as the model family, software bill of materials (SBOM), and organizational
       ownership boundaries—to inform continuous access policies.
 
-   .. rubric:: Ephemeral Access
-     :name: ephemeral-access
+   .. raw:: html
+
+      <h3 id="ephemeral-access">Ephemeral Access</h3>
 
    Conversely, commenters strongly advocated for the use of highly ephemeral identifiers, tokens, or credentials when an agent is executing tasks within a
    workflow. Because AI agents can be instantiated dynamically to perform specialized, short-lived tasks, granting them long-lived API keys or persistent
@@ -240,8 +250,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    -  **Revocability**: The capability to request to revoke a specific operational token without disrupting the persistent identity anchor or freezing other
       co-existing agent workflows.
 
-   .. rubric:: Task Scoped & Contextual Authorization
-     :name: task-scoped-and-contextual-authorization
+   .. raw:: html
+
+      <hr />
+      <h2 id="task-scoped-and-contextual-authorization">Task Scoped & Contextual Authorization</h2>
 
    There is a strong consensus that identity models will need to shift to more dynamic, context aware methods of managing authorization decisions. Relying on
    static entitlements or super-sets of inherited entitlements is insufficient to address the probabilistic nature of agents as they decompose and execute the
@@ -262,8 +274,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    compromised or malicious agent and provides the ability to manage access based on what needs to be done by agents rather than relying on inherited entitlements
    of users or parent agents.
 
-   .. rubric:: Cryptographic Signed Intent
-     :name: cryptographic-signed-intent
+   .. raw:: html
+
+      <hr />
+      <h2 id="cryptographic-signed-intent">Cryptographic Signed Intent</h2>
 
    Cryptographic intent—essentially having some form of the user’s expected outcomes signed by a trusted key—is seen by our commenters as a necessity, particularly
    for the advancement of consumer facing or cross boundary use cases. It provides an integrity and tamper resistant statement of what the agent is supposed to be
@@ -288,8 +302,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    This is an area that will require further engagement and standardization efforts—but will likely be a notable part of enterprise use cases in the future and a
    potentially critical component for consumer facing use cases such as online retail and commerce.
 
-   .. rubric:: Delegation and Accountability 
-     :name: delegation-and-accountability
+   .. raw:: html
+
+      <hr />
+      <h2 id="delegation-and-accountability">Delegation and Accountability</h2>
 
    Many commenters emphasized that AI agents derive authority from human or organizational principles and therefore require mechanisms that preserve authorization
    context across service boundaries and through delegation chains. Delegation is an existing challenge in today’s identity infrastructure and will be exacerbated
@@ -310,8 +326,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    scope attenuation across organizational boundaries, are then consumed by resource servers, MCP servers, and policy enforcement points while preserving the
    delegation chain.
 
-   .. rubric:: Deterministic v. Probabilistic Authorization approaches
-     :name: deterministic-vs-probabilistic-authorization-approaches
+   .. raw:: html
+
+      <hr />
+      <h2 id="deterministic-vs-probabilistic-authorization-approaches">Deterministic v. Probabilistic Authorization approaches</h2>
 
    Traditionally, authorization relies on deterministic policy enforcement mechanisms to manage granular access to resources, data, and APIs. Agents, however, are
    inherently probabilistic, they are executing tasks, and performing actions based on how their reasoning model decomposes a user’s intent and responding to new
@@ -335,8 +353,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    enabling more flexible mechanisms for the application of granular, context informed decisions.
 
    
-   .. rubric:: Control Plane vs. Data Plane
-      :name: control-plane-vs-data-plane
+   .. raw:: html
+
+      <hr />
+      <h2 id="control-plane-vs-data-plane">Control Plane vs. Data Plane</h2>
 
    The feedback provided in the public comments highlighted that securing and trusting AI agents is fundamentally challenged by a lack of separation between their
    data and control layers. Unlike traditional systems, which strictly separate processing instructions from user input to avoid security weaknesses (e.g. SQL
@@ -358,8 +378,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    standardized policy language to enable more consistent authorization at run-time and across organizational boundaries.
 
    
-   .. rubric:: Direct and Indirect Prompt Injection
-      :name: direct-and-indirect-prompt-injection
+   .. raw:: html
+
+      <hr />
+      <h2 id="direct-and-indirect-prompt-injection">Direct and Indirect Prompt Injection</h2>
 
    As a result of the lack of separation between the data and control layers, many respondents highlighted the risk of direct and indirect prompt injections.
    Specifically, the risk that as agents call external tools and resources, there is an increased likelihood that the agent will ingest untrusted data into its
@@ -375,8 +397,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    contain a prompt injection. As mentioned above, respondents also mentioned the need for a governance layer that can monitor and sanitize agentic reasoning model
    inputs as well as the need to ensure that audit logs contain information about which tools and resources an agent called.
 
-   .. rubric:: Metadata as a critical trust signal
-     :name: metadata-as-a-critical-trust-signal
+   .. raw:: html
+
+      <hr />
+      <h2 id="metadata-as-a-critical-trust-signal">Metadata as a critical trust signal</h2>
 
    Public feedback strongly suggests that NIST frame AI agent metadata not as a flat log file, but as a layered, cryptographically bound schema that isolates the
    underlying model substrate, the execution runtime, and operational boundaries. Commenters emphasized that metadata serves as the foundational "trust telemetry"
@@ -412,8 +436,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    Standard bodies within the agentic ecosystem will need to develop these extensions and profiles for their relevant agentic protocols (e.g., MCP, A2A, OAuth,
    WIMSE/SPIFFE, VC/DID, and SCITT) to ensure that metadata does not become another source of ambiguity, spoofing, or policy drift.
 
-   .. rubric:: Auditability beyond action logging
-     :name: auditability-beyond-action-logging
+   .. raw:: html
+
+      <hr />
+      <h2 id="auditability-beyond-action-logging">Auditability beyond action logging</h2>
 
    A recurring theme across submissions was that traditional audit logs capture what happened but often fail to capture why an action occurred, what authority
    governed it, what information influenced the decision, or whether alternative actions were considered.
@@ -430,15 +456,19 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    Collectively, the comments suggest that agent governance may require richer evidence models than those traditionally used for human users or software services,
    which would include both agentic actions and the context in which the agent was operating.
 
-   .. rubric:: Privacy 
-     :name: privacy
+   .. raw:: html
+
+      <hr />
+      <h2 id="privacy">Privacy</h2>
 
    NIST’s concept paper focused primarily on gaining insights into the security concerns associated with agentic deployments. However, privacy remains a paramount
    priority for NIST in the implementation of AI systems and agentic tools. Commenters seemed to agree, with many highlighting key privacy concerns that—if
    realized—could actively erode trust in agentic systems and expose users and organizations to risk, including the exposure of highly sensitive information. While
    many issues were called out, a few overarching concerns surfaced: Loss of Anonymity, User Profiling, Data Leakage, and Overcollection.
 
-   **Loss of Anonymity & User Profiling**
+   .. raw:: html
+
+      <h3 id="loss-of-anonymity-user-profiling">Loss of Anonymity & User Profiling</h3>
 
    Unlike ordinary software, an agent does not merely collect inputs or present choices; it can interpret goals, infer preferences, remember sensitive facts, call
    tools, search across contexts, and act on the user’s behalf. When coupled with cryptographically bound and potentially static human-user IDs transiting multiple
@@ -454,7 +484,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
 
       -- Concept Paper Commenter
 
-   **Data Leakage & Overcollection**
+   .. raw:: html
+
+      <h3 id="data-leakage-overcollection">Data Leakage & Overcollection</h3>   
 
    While not the same, data leakage and overcollection go hand in hand. When systems aggregate unnecessary data, they also create potential exposure points where
    data can be accessed by unauthorized end-points, users, or agents. Many commenters noted that agents will create new vectors for both leakage and overcollection
@@ -473,14 +505,18 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    tools, data sources, and downstream services. Also noted was the need to strike a balance between the need for identity, authorization and auditability, with
    the desired privacy outcomes.
 
-   .. rubric:: User Experience
-     :name: user-experience
+   .. raw:: html
+
+      <hr />
+      <h2 id="user-experience">User Experience</h2>
 
    As AI transitions from chat bots to autonomous agents capable of chaining tasks and exercising delegated access, the human role fundamentally shifts from direct
    operator to agent overseer. Commenters noted that user experience plays a foundational role in ensuring that humans can confidently consent to, manage, and
    maintain control over agentic actions.
 
-   **Consent Fatigue**
+   .. raw:: html
+
+      <h3 id="consent-fatigue">Consent Fatigue</h3>     
 
    Many commenters stressed the need for Human-in-the-Loop (HITL) safeguards in agentic systems to ensure accountability and prevent harmful autonomous actions.
    However, constantly requiring human approval for routine tasks—such as accessing new data sources or tools—introduces a severe risk of consent fatigue.
@@ -493,7 +529,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    Commenters recommended a risk-based framework that reserves HITL interactions solely for high-impact, high-risk actions. Otherwise, users overwhelmed by prompts
    may become habituated to thoughtlessly approving access requests, undermining the non-repudiation and accountability that HITL was meant to provide.
 
-   **Lack of Transparency & Explainability**
+   .. raw:: html
+
+      <h3 id="lack-of-transparency-explainability">Lack of Transparency & Explainability</h3>    
 
    In agentic architectures, “anti-patterns” extend beyond misleading buttons or confusing settings. User interactions are conversational in nature, and complex
    processes—such as task decomposition, back-end tool calls, and autonomous execution—can be exceptionally challenging for users to understand. As identified by
@@ -524,7 +562,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    proposals. The content here is an attempt to reflect feedback from the public comment period. Inclusion or omission in this document of any particular draft or
    standard should not be taken as endorsement or rejection**.   
 
-   **Conceptual Models**. The IETF `AI Agent Authentication and Authorization <https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/00/>`__ draft introduces the
+   **Conceptual Models**. The IETF `AI Identity Management System <https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/00/>`__ draft introduces the
    **Agent Identity Management System (AIMS)** as an emerging  conceptual model for establishing, maintaining, and evaluating the identity and permissions of an
    agent workload, and organizes `WIMSE <https://datatracker.ietf.org/wg/wimse/documents/>`__,
    `SPIFFE/SPIRE <https://spiffe.io/docs/latest/spiffe-about/overview/>`__, `OAuth 2.0 <https://datatracker.ietf.org/doc/rfc6749/>`__, OpenID `Shared
@@ -630,8 +668,9 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    already emerging. While commenters proposed a diverse set of deployment scenarios, several common business use cases appeared repeatedly. The following use
    cases were the most mentioned. All are potential candidates for future demonstration and implementation under an NCCoE Project.
 
-   .. rubric:: Software Development and Deployment
-      :name: software-development-and-deployment
+   .. raw:: html
+
+      <h2 id="software-development-and-deployment">Software Development and Deployment</h2>
 
    This was a major focus, with many commenters seeking to expand the original concept paper's definition to include more granular phases of the lifecycle and
    specific technical integrations.
@@ -647,8 +686,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
 
    - **Standards Integration:** Several comments highlighted integrating with the Model Context Protocol (MCP) and using SBOM/CBOM for entitlement handling.
 
-   .. rubric:: Financial Services and Transactions
-      :name: financial-services-and-transactions
+   .. raw:: html
+      
+      <hr />
+      <h2 id="financial-services-and-transactions">Financial Services and Transactions</h2>
 
    Commenters frequently requested the addition of high-assurance financial scenarios involving autonomous movement of funds and regulated data.
 
@@ -660,8 +701,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
 
    - **Agentic Commerce:** This includes autonomous procurement, B2B commerce requiring entity-trust verification, and "internal commerce assistants" for retail platforms.
 
-   .. rubric:: Security Operations (SecOps)
-      :name: security-operations-secops
+   .. raw:: html
+
+      <hr />
+      <h2 id="security-operations-secops">Security Operations (SecOps)</h2>
 
    Building on the concept paper's "AI agents for security," commenters provided specific operational scenarios where these agents are already being deployed.
 
@@ -673,8 +716,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
 
    - **Pen-testing:** One submission raised specific questions regarding the delegation of authority for "security-researcher agents" and the "pentest carve-out" problem.
 
-   .. rubric:: Healthcare and Life Sciences
-      :name: healthcare-and-life-sciences
+   .. raw:: html
+
+      <hr />
+      <h2 id="healthcare-and-life-sciences">Healthcare and Life Sciences</h2>
 
    Healthcare was highlighted as a high-impact, regulated sector where cross-organizational data exchange is critical.
 
@@ -686,8 +731,10 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
 
    - **Patient Navigation:** Consumer-facing healthcare navigators and member-facing chatbots were proposed to illustrate human-to-agent verification.
 
-   .. rubric:: Consumer-Facing and Personal Assistants
-      :name: consumer-facing-and-personal-assistants
+   .. raw:: html
+
+      <hr />
+      <h2 id="consumer-facing-and-personal-assistants">Consumer-Facing and Personal Assistants</h2>
 
    A significant number of comments argued that the project should look beyond purely enterprise-internal scenarios to include how agents interact with the public.
 
@@ -724,7 +771,7 @@ and publication of deliverables on agentic AI identity and authorization. This d
 
 
 
-.. |image1| image:: media/media/image1.png
+.. |image1| image:: media/image1.png
    :width: 6.5in
    :height: 2.73611in
    :alt: Donut chart and breakdown table showing the sector distribution of 614 NIST NCCoE RFI responses, led by Industry / Private Sector at 70% (430 responses), followed by Independent / Individual at 20% (123 responses).
