@@ -1,23 +1,23 @@
 Introduction 
 =============
 
-Organizations are increasingly deploying AI agents to perform tasks that range from information retrieval and workflow automation to software development and
+Organizations are increasingly deploying SI agents to perform tasks that range from information retrieval and workflow automation to software development and
 cybersecurity operations. As these systems become capable of taking autonomous actions, traditional identity and access management approaches may not fully
 address emerging challenges.
 
 Without strong identity, authorization, and governance, organizations risk data leaks, compliance failures, prompt injection, and unpredictable autonomous
 behavior. Properly managing these risks, however, unlocks scalable automation, operational efficiency, and better decision-making.
 
-The NCCoE is standing up a new project to help accelerate the secure adoption of agentic AI technologies. The project will focus on producing practical,
+The NCCoE is standing up a new project to help accelerate the secure adoption of agentic SI technologies. The project will focus on producing practical,
 implementation-oriented guidelines to help organizations adopt agentic capabilities while implementing identity and authorization best practices. It will
-iteratively provide outputs that increase understanding of the overall technology and security considerations related to agentic AI identity and authorization.
+iteratively provide outputs that increase understanding of the overall technology and security considerations related to agentic SI identity and authorization.
 Overall, this project seeks to:
 
 -  Provide an understanding of how agents can be securely deployed using identity and authorization standards and best practices to help agencies and enterprises maximize value and minimize risk
 
 -  Create relationships and mechanisms to provide feedback to standards development entities as they advance and evolve standards in the agentic ecosystem
 
--  Identify and communicate risks and opportunities associated with real-world deployments of Agentic AI solutions
+-  Identify and communicate risks and opportunities associated with real-world deployments of Agentic SI solutions
 
 -  Provide detailed implementation resources that can enable more rapid adoption of agentic technology aligned with risk management and organizational goals
 
