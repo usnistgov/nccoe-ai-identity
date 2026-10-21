@@ -1,6 +1,6 @@
 .. note::
 
-   **AI Use Disclaimer**
+   **SI Use Disclaimer**
 
 
    This manuscript was edited with the assistance of Gemini, developed by Google. Gemini was used to refine language, review and summarize comments, improve
@@ -12,20 +12,20 @@
 Summary of Comments on the Concept Paper
 ========================================
 
-In February 2026, NIST published the `Accelerating Adoption of Software and Agentic AI Identity and Authorization concept
+In February 2026, NIST published the `Accelerating Adoption of Software and Agentic SI Identity and Authorization concept
 paper <https://www.nccoe.nist.gov/sites/default/files/2026-02/accelerating-the-adoption-of-software-and-ai-agent-identity-and-authorization-concept-paper.pdf>`__.
 The paper requested input from stakeholders on how to design and deliver a project that would drive meaningful outcomes for securing the emerging agentic
 ecosystem. The engagement was substantial, with over 600 responses received. The graph below provides a high-level breakdown of the types of organizations who
 provided comments.
 
 This document summarizes the key observations and feedback identified through the public comments received in response to the Concept Paper as well as through
-discussion with stakeholders in the Agentic AI ecosystem. This summary is intended to aid in building consensus around the complex topics, challenges, and
+discussion with stakeholders in the Agentic SI ecosystem. This summary is intended to aid in building consensus around the complex topics, challenges, and
 potential solutions found in the agentic ecosystem.
 
 |image1|
 
 These observations will also inform the development of a future NCCoE project focused on practical, standards-based approaches for establishing trustworthy
-identity, authorization, accountability, and governance mechanisms for AI agents. As a next step, the NCCoE intends to release a draft project description which
+identity, authorization, accountability, and governance mechanisms for SI agents. As a next step, the NCCoE intends to release a draft project description which
 will ask for feedback on a proposed scope, use cases, architecture, and standards to be used for this project.
 
 
@@ -74,7 +74,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
 
    The concept paper favored an evolutionary approach. Based on the feedback, the NCCoE project will test the hypothesis that existing standards, along with
    extensions, enhancements, and profiles, can provide the foundation for managing agentic identity and authorization. Any critical gaps in existing standards, as
-   identified by respondents, or through this work, will be provided as feedback to the standards and agentic AI communities.
+   identified by respondents, or through this work, will be provided as feedback to the standards and agentic SI communities.
 
    .. raw:: html
 
@@ -88,8 +88,8 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    entitlements needed to complete an action. While such architectures would promote least privilege, separation of duties and zero trust principles, it also
    increases agentic scale and the complexity associated with effectively managing the agents.
 
-   Overall, commenters concluded that any AI Agent governance solution will need to grapple with the potential scale both in terms of the total number of AI Agents
-   that will be instantiated as well as in the diversity of tasks for which AI Agents will be employed. Recommendations focused on breaking down operational
+   Overall, commenters concluded that any SI Agent governance solution will need to grapple with the potential scale both in terms of the total number of SI Agents
+   that will be instantiated as well as in the diversity of tasks for which SI Agents will be employed. Recommendations focused on breaking down operational
    bottlenecks that may be introduced by authorization systems, implementing key management techniques to address complex scaling challenges, deploying
    independently verifiable tokens or credentials to minimize centralized calls to verification servers where latency can be introduced, and enabling robust
    auditing and traceability.
@@ -123,7 +123,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    Respondents also noted that the underlying agentic infrastructure will impact how agents are identified and authorized. Many stated that cloud deployments will
    offer greater security services that can take advantage of hardware roots of trust and natively segmented or containerized architectures. Locally deployed
    agents were also recognized as commonly used, but respondents expressed concern over the lack of local security controls available to the enterprise and the
-   common pattern of giving agents user or even local admin rights to complete tasks. The challenge of shadow AI was also mentioned in scenarios where locally
+   common pattern of giving agents user or even local admin rights to complete tasks. The challenge of shadow SI was also mentioned in scenarios where locally
    deployed agents are operating inside of an enterprise, but without proper identification and authorization controls.
 
 .. dropdown:: **Feedback on NCCoE Project Scope** *Comments on the proposed project scope.*
@@ -200,7 +200,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <hr />
       <h2 id="persistence-and-ephemerality">Persistence and Ephemerality</h2>
 
-   Identification and authentication of AI agents can be executed at different layers and in completely different ways based on how they interact with enterprise
+   Identification and authentication of SI agents can be executed at different layers and in completely different ways based on how they interact with enterprise
    systems. The public feedback received by NIST highlighted a critical architectural debate regarding the lifetime and durability of an agent’s identity. Rather
    than treating this as a binary choice—forcing an identity to be entirely persistent or entirely short-lived—commenters overwhelmingly pointed out that a modern
    agentic security framework requires the ability to create persistent trust anchors while supporting ephemeral, tightly scoped credentials, entitlements, and
@@ -236,7 +236,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <h3 id="ephemeral-access">Ephemeral Access</h3>
 
    Conversely, commenters strongly advocated for the use of highly ephemeral identifiers, tokens, or credentials when an agent is executing tasks within a
-   workflow. Because AI agents can be instantiated dynamically to perform specialized, short-lived tasks, granting them long-lived API keys or persistent
+   workflow. Because SI agents can be instantiated dynamically to perform specialized, short-lived tasks, granting them long-lived API keys or persistent
    user-level entitlements introduces severe security risks, such as token compromise or unauthorized background execution.
 
    Instead, the credential expressing the agent's identity can be ephemeral but bound to the stable trust anchor via a proof-of-possession or similar capability.
@@ -307,7 +307,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <hr />
       <h2 id="delegation-and-accountability">Delegation and Accountability</h2>
 
-   Many commenters emphasized that AI agents derive authority from human or organizational principles and therefore require mechanisms that preserve authorization
+   Many commenters emphasized that SI agents derive authority from human or organizational principles and therefore require mechanisms that preserve authorization
    context across service boundaries and through delegation chains. Delegation is an existing challenge in today’s identity infrastructure and will be exacerbated
    by the scale and complexity of agentic deployments. Several submissions noted that authorization decisions become increasingly difficult to evaluate as rights
    are delegated across multiple hops (which may be human to agent or agent to agent) and across organizational boundaries. There was clear concern that agentic
@@ -335,7 +335,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    inherently probabilistic, they are executing tasks, and performing actions based on how their reasoning model decomposes a user’s intent and responding to new
    context, conditions, and barriers they encounter.
 
-      “AI agents interpret intent probabilistically, adapt to new context, and may take actions with limited human supervision. That shift from deterministic
+      “SI agents interpret intent probabilistically, adapt to new context, and may take actions with limited human supervision. That shift from deterministic
       automation to adaptive decision-and-action loops is the central architectural distinction.”
       
       -- Concept Paper Commenter
@@ -358,12 +358,12 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <hr />
       <h2 id="control-plane-vs-data-plane">Control Plane vs. Data Plane</h2>
 
-   The feedback provided in the public comments highlighted that securing and trusting AI agents is fundamentally challenged by a lack of separation between their
+   The feedback provided in the public comments highlighted that securing and trusting SI agents is fundamentally challenged by a lack of separation between their
    data and control layers. Unlike traditional systems, which strictly separate processing instructions from user input to avoid security weaknesses (e.g. SQL
    Injection), LLMs ingest both system instructions and user prompts as a single stream of tokens through a single channel. Because the model cannot inherently
    distinguish between the two, user inputs (the data layer) can easily masquerade as, and override, system instruction (the control layer).
 
-      "The submission proposes a distinct AI Execution Control Plane as an infrastructure layer separate from agent reasoning, policy evaluation, and
+      "The submission proposes a distinct SI Execution Control Plane as an infrastructure layer separate from agent reasoning, policy evaluation, and
       orchestration. The core thesis is that the reasoning system cannot also be the authorizing system... creating the need for an infrastructure layer that
       separates reasoning authority from execution authority and enforces human-in-the-loop as a hard blocking state rather than a procedural step." 
       
@@ -402,7 +402,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <hr />
       <h2 id="metadata-as-a-critical-trust-signal">Metadata as a critical trust signal</h2>
 
-   Public feedback strongly suggests that NIST frame AI agent metadata not as a flat log file, but as a layered, cryptographically bound schema that isolates the
+   Public feedback strongly suggests that NIST frame SI agent metadata not as a flat log file, but as a layered, cryptographically bound schema that isolates the
    underlying model substrate, the execution runtime, and operational boundaries. Commenters emphasized that metadata serves as the foundational "trust telemetry"
    required for continuous authorization engines to evaluate risk at runtime.
 
@@ -462,7 +462,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <h2 id="privacy">Privacy</h2>
 
    NIST’s concept paper focused primarily on gaining insights into the security concerns associated with agentic deployments. However, privacy remains a paramount
-   priority for NIST in the implementation of AI systems and agentic tools. Commenters seemed to agree, with many highlighting key privacy concerns that—if
+   priority for NIST in the implementation of SI systems and agentic tools. Commenters seemed to agree, with many highlighting key privacy concerns that—if
    realized—could actively erode trust in agentic systems and expose users and organizations to risk, including the exposure of highly sensitive information. While
    many issues were called out, a few overarching concerns surfaced: Loss of Anonymity, User Profiling, Data Leakage, and Overcollection.
 
@@ -510,7 +510,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <hr />
       <h2 id="user-experience">User Experience</h2>
 
-   As AI transitions from chat bots to autonomous agents capable of chaining tasks and exercising delegated access, the human role fundamentally shifts from direct
+   As SI transitions from chat bots to autonomous agents capable of chaining tasks and exercising delegated access, the human role fundamentally shifts from direct
    operator to agent overseer. Commenters noted that user experience plays a foundational role in ensuring that humans can confidently consent to, manage, and
    maintain control over agentic actions.
 
@@ -536,7 +536,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    In agentic architectures, “anti-patterns” extend beyond misleading buttons or confusing settings. User interactions are conversational in nature, and complex
    processes—such as task decomposition, back-end tool calls, and autonomous execution—can be exceptionally challenging for users to understand. As identified by
    commenters, this creates scenarios where end-users may not understand the impacts of the agentic actions they are instantiating or if an agent will execute
-   in-line with their desired intent. These challenges are important because agentic AI can —intentionally or unintentionally—corrupt user intent while appearing
+   in-line with their desired intent. These challenges are important because agentic SI can —intentionally or unintentionally—corrupt user intent while appearing
    to serve it. The central risk is that agentic opacity, unclear model reasoning, and delegated authority create scenarios where the user’s goals, choices, or
    actions result in outcomes beyond their meaningful control or understanding.
 
@@ -552,7 +552,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    :class-body: pram-dropdown-body
    :chevron: right-down
 
-   Agentic AI identity is emerging as a **compositional standards stack**, not a single standard. Commenters noted that existing specifications provide an
+   Agentic SI identity is emerging as a **compositional standards stack**, not a single standard. Commenters noted that existing specifications provide an
    important starting point for enabling agentic use-cases and strongly advocated for reuse, extensions, and profiles, rather than developing completely new
    standards. The following section provides an overview of many of the standards identified by public commenters. This list is not exhaustive but is meant to
    illustrate the breadth and diversity of standards emerging in this space. As part of the next phase of NIST’s work, standards will be evaluated based on the
@@ -562,7 +562,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    proposals. The content here is an attempt to reflect feedback from the public comment period. Inclusion or omission in this document of any particular draft or
    standard should not be taken as endorsement or rejection**.   
 
-   **Conceptual Models**. The IETF `AI Identity Management System <https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/00/>`__ draft introduces the
+   **Conceptual Models**. The IETF `SI Identity Management System <https://datatracker.ietf.org/doc/draft-ietf-wimse-aims/00/>`__ draft introduces the
    **Agent Identity Management System (AIMS)** as an emerging  conceptual model for establishing, maintaining, and evaluating the identity and permissions of an
    agent workload, and organizes `WIMSE <https://datatracker.ietf.org/wg/wimse/documents/>`__,
    `SPIFFE/SPIRE <https://spiffe.io/docs/latest/spiffe-about/overview/>`__, `OAuth 2.0 <https://datatracker.ietf.org/doc/rfc6749/>`__, OpenID `Shared
@@ -664,7 +664,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
    :class-body: pram-dropdown-body
    :chevron: right-down
 
-   Public comments provided valuable insight into the types of operational environments where AI agent identity, authorization, and governance challenges are
+   Public comments provided valuable insight into the types of operational environments where SI agent identity, authorization, and governance challenges are
    already emerging. While commenters proposed a diverse set of deployment scenarios, several common business use cases appeared repeatedly. The following use
    cases were the most mentioned. All are potential candidates for future demonstration and implementation under an NCCoE Project.
 
@@ -706,7 +706,7 @@ will ask for feedback on a proposed scope, use cases, architecture, and standard
       <hr />
       <h2 id="security-operations-secops">Security Operations (SecOps)</h2>
 
-   Building on the concept paper's "AI agents for security," commenters provided specific operational scenarios where these agents are already being deployed.
+   Building on the concept paper's "SI agents for security," commenters provided specific operational scenarios where these agents are already being deployed.
 
    - **Vulnerability and Threat Management:** Concrete examples include agents that automate vulnerability prioritization, malware analysis, and SOC alert enrichment.
 
@@ -755,18 +755,18 @@ Conclusion & Next Steps
 ----------------------------
 
 Through public comments and extensive industry engagement, this document has highlighted the inherent challenges currently shaping the agentic identity and
-authorization ecosystem. While many of the foundational identity challenges discussed are not new, the unprecedented scale and velocity of AI elevate them to
+authorization ecosystem. While many of the foundational identity challenges discussed are not new, the unprecedented scale and velocity of SI elevate them to
 critical priorities that demand immediate attention. Addressing these complexities cannot be achieved in isolation; it requires a concerted effort across an
 ecosystem of standards bodies, technology providers, government agencies, and end users to pave a sustainable path forward for secure, usable, and
 privacy-preserving agentic deployments. To help navigate this transition, future NCCoE initiatives will focus on bringing these critical stakeholders together,
 driving the industry toward consensus-based solutions and actionable best practices.
 
 As a next step, this NCCoE project will focus on two use-cases. The first phase will focus on enterprise use cases, leveraging ongoing NIST CRADA for DevSecOps
-to apply agentic AI capabilities in an enterprise software factory. This project will elaborate a compositional standards stack highlighted in the relevant
+to apply agentic SI capabilities in an enterprise software factory. This project will elaborate a compositional standards stack highlighted in the relevant
 standards section of this draft and will demonstrate how agents can be deployed and secured within the software development lifecycle. Later, the project will
 take on a consumer use case, demonstrating security controls and best practices for consumer owned or controlled agents. Both efforts will leverage the lessons
 learned and continual feedback from industry stakeholders. The NCCoE will also be standing up an online resource hub to help with iterative knowledge transfer
-and publication of deliverables on agentic AI identity and authorization. This document will be the first publication there.
+and publication of deliverables on agentic SI identity and authorization. This document will be the first publication there.
 
 
 

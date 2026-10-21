@@ -10,7 +10,7 @@ import sys
 
 sys.path.append(os.path.abspath("_themes"))
 
-project = 'NCCoE Agentic AI Identity and Authorization Project Resource Hub'
+project = 'NCCoE Agentic SI Identity and Authorization Project Resource Hub'
 author = 'NIST NCCoE'
 email = u'AI-Identity@nist.gov'
 email_subject = u'[Doc review] {PROJECT} - {N} comments'
@@ -123,7 +123,7 @@ html_theme_options = {
     'navigation_depth': 1,
     'includehidden': True,
     'titles_only': True,
-    'project_page': 'https://www.nccoe.nist.gov/projects/software-and-ai-agent-identity-and-authorization'
+    'project_page': 'https://www.nccoe.nist.gov/projects/software-and-si-agent-identity-and-authorization'
 }
 html_context = {
     "email": email,
